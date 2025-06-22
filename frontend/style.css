@@ -1,0 +1,203 @@
+:root {
+  --grape: #8338AFff;
+  --claret: #6C0E29ff;
+  --puce: #D998A1ff;
+  --dark-purple: #1D0222ff;
+  --indigo: #510792ff;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(135deg, var(--grape), var(--claret), var(--puce), var(--dark-purple), var(--indigo));
+  color: var(--puce);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0 2rem;
+  color: var(--puce);
+}
+
+header h1 {
+  text-shadow: 0 0 6px var(--grape);
+}
+
+#btnLogout {
+  background-color: var(--claret);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: var(--puce);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-size: 0.9rem;
+}
+
+#btnLogout:hover {
+  background-color: var(--grape);
+  box-shadow: 0 0 8px var(--grape);
+}
+
+#btnHistorico {
+  background-color: var(--grape);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: var(--puce);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+#btnHistorico:hover {
+  background-color: var(--indigo);
+  box-shadow: 0 0 8px var(--indigo);
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--puce);
+}
+
+.pesquisa-wrapper {
+  background: var(--dark-purple);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.pesquisa-barra {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+#inputTermo {
+  flex-grow: 1;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  border: 2px solid var(--puce);
+  background-color: var(--dark-purple);
+  color: #fff;
+  font-size: 1.1rem;
+  min-width: 400px;
+}
+
+#inputTermo::placeholder {
+  color: var(--puce);
+  opacity: 0.7;
+}
+
+#inputTermo:focus {
+  border-color: var(--grape);
+  outline: none;
+  box-shadow: 0 0 8px var(--grape);
+}
+
+#btnPesquisar {
+  padding: 1rem 1.5rem;
+  background-color: var(--grape);
+  border: none;
+  border-radius: 8px;
+  color: var(--claret);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#btnPesquisar:hover {
+  background-color: var(--indigo);
+  box-shadow: 0 0 10px var(--indigo);
+  color: #fff;
+}
+
+#msgErro {
+  color: var(--claret);
+  font-weight: 700;
+  min-height: 1.2rem;
+  text-align: center;
+}
+
+.resultados {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Card horizontal - artista */
+.card-artista {
+  display: flex;
+  background-color: var(--claret);
+  border-radius: 10px;
+  padding: 1rem;
+  gap: 1rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  color: var(--puce);
+  width: 100%;
+}
+
+.card-artista img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-artista .info {
+  flex-grow: 1;
+}
+
+.card-artista h3 {
+  margin-bottom: 0.4rem;
+}
+
+.card-artista p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Imagens adicionais */
+.imagens-artisticas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.imagens-artisticas img {
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}

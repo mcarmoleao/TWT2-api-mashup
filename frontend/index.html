@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>API Mashup - Pesquisa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Mashup API</h1>
+    <button id="btnLogout">Logout</button>
+    <button id="btnHistorico">Histórico</button>
+  </header>
+
+  <main>
+    <div class="pesquisa-container">
+      <input id="inputTermo" type="text" placeholder="Escreve o termo a pesquisar..." autocomplete="off" />
+      <button id="btnPesquisar">Pesquisar</button>
+    </div>
+
+    <div id="msgErro"></div>
+
+    <div class="resultados" id="resultados"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

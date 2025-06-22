@@ -1,0 +1,104 @@
+/* style-auth.css */
+:root {
+  --grape: #8338AFff;
+  --claret: #6C0E29ff;
+  --puce: #D998A1ff;
+  --dark-purple: #1D0222ff;
+  --indigo: #510792ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(135deg, var(--grape), var(--claret), var(--puce), var(--dark-purple), var(--indigo));
+  color: var(--puce);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container {
+  background: var(--dark-purple);
+  color: var(--puce);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--puce);
+  text-shadow: 0 0 6px var(--grape);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 1.2rem;
+  border: 2px solid var(--puce);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--dark-purple);
+  color: #fff;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: var(--grape);
+  outline: none;
+  box-shadow: 0 0 8px var(--grape);
+}
+
+button {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: var(--grape);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: var(--puce);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: var(--indigo);
+  box-shadow: 0 0 10px var(--indigo);
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--puce);
+}
+
+p a {
+  color: var(--puce);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+p a:hover {
+  color: var(--grape);
+}
